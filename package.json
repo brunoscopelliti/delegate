@@ -1,0 +1,41 @@
+{
+  "name": "delegate",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoscopelliti/delegate.git"
+  },
+  "keywords": [
+    "events",
+    "delegation",
+    "dom",
+    "events"
+  ],
+  "author": "Bruno Scopelliti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoscopelliti/delegate/issues"
+  },
+  "homepage": "https://github.com/brunoscopelliti/delegate#readme",
+  "devDependencies": {
+    "babel-core": "6.24.1",
+    "babel-loader": "6.4.1",
+    "babel-preset-es2015": "6.24.1",
+    "karma": "1.6.0",
+    "karma-chrome-launcher": "2.0.0",
+    "karma-firefox-launcher": "1.0.1",
+    "karma-ie-launcher": "1.0.0",
+    "karma-qunit": "1.2.1",
+    "karma-safari-launcher": "1.0.0",
+    "karma-sauce-launcher": "1.1.0",
+    "karma-webpack": "2.0.3",
+    "qunitjs": "2.3.1",
+    "sinon": "2.1.0",
+    "webpack": "2.4.1"
+  }
+}
