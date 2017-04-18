@@ -54,5 +54,7 @@ QUnit.test('delegate', function(assert) {
   matchingLink.click();
   sinon.assert.calledOnce(spy);
   sinon.assert.calledOn(spy, matchingLink);
-  assert.strictEqual(Object.prototype.toString.call(spy.getCall(0).args[0]), '[object MouseEvent]');
+  sinon.assert.calledWith(spy, sinon.match.instanceOf(Event));
+
+  assert.expect(0);
 });
