@@ -32,7 +32,8 @@ QUnit.module('delegate', {
   },
 
   afterEach() {
-    document.getElementById('testRootContainer').remove();
+    const root = document.getElementById('testRootContainer');
+    root.parentNode.removeChild(root);
   }
 
 });
@@ -54,7 +55,5 @@ QUnit.test('delegate', function(assert) {
   matchingLink.click();
   sinon.assert.calledOnce(spy);
   sinon.assert.calledOn(spy, matchingLink);
-  sinon.assert.calledWith(spy, sinon.match.instanceOf(Event));
-
-  assert.expect(0);
+  assert.ok(spy.getCall(0).args[0] instanceof Event);
 });
