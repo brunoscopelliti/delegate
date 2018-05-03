@@ -28,7 +28,7 @@ function pickFavourite(event){
 }
 
 document.getElementById('favourites')
-  .addEventListener('click', delegate('li', pickFavourite));
+  .addEventListener('click', delegate(pickFavourite, 'li'));
 ```
 
 ## support
